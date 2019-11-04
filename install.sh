@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install Docker
+https://docs.docker.com/install/linux/docker-ce/ubuntu/
+
 # Upgrade the system and install go
 sudo apt update
 sudo apt upgrade -y
