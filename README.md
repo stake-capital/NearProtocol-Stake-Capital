@@ -3,6 +3,9 @@
 ## Info
 https://docs.nearprotocol.com/docs/local-setup/running-testnet
 
+## Installation doc
+https://docs.nearprotocol.com/docs/validator/staking
+
 ## StakeWars
 
 https://github.com/nearprotocol/stakewars
