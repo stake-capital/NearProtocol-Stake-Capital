@@ -9,8 +9,12 @@ https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
 # Install using Docker instance 
 
-## Run instance 
+## Init instance 
+## ATTENTION It will overwrite keys
 `sudo ./scripts/start_stakewars.py --init --signer-keys --account-id=b742da24d6d5803b6c5e4f5bf0ff2c0ef1e94f55`
+
+## Run instance 
+`sudo ./scripts/start_stakewars.py --signer-keys --account-id=StakeCapital`
 
 ## Validator ID (Also SC Eth address: 0xb742da24d6d5803b6c5e4f5bf0ff2c0ef1e94f55)
 `b742da24d6d5803b6c5e4f5bf0ff2c0ef1e94f55`
