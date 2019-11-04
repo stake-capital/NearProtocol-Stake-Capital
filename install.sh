@@ -7,14 +7,14 @@ https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
 `echo '/tmp/core.%t.%e.%p' | sudo tee /proc/sys/kernel/core_pattern`
 
-# Upgrade the system and install go
-sudo apt update
-sudo apt upgrade -y
-apt install -y git binutils-dev libcurl4-openssl-dev zlib1g-dev libdw-dev libiberty-dev cmake gcc g++ python docker.io protobuf-compiler libssl-dev pkg-config
+# Install using Docker instance 
 
+## Run instance 
+`sudo ./scripts/start_stakewars.py --init --signer-keys --account-id=b742da24d6d5803b6c5e4f5bf0ff2c0ef1e94f55`
 
-# Install NearProtocol
-git clone https://github.com/nearprotocol/nearcore.git
-cd nearcore
+## Validator ID (Also SC Eth address: 0xb742da24d6d5803b6c5e4f5bf0ff2c0ef1e94f55)
+`b742da24d6d5803b6c5e4f5bf0ff2c0ef1e94f55`
 
-./scripts/start_testnet.py --nodocker
+## Log
+docker logs --follow nearcore
+
