@@ -3,6 +3,10 @@
 # Install Docker
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
+# To enable coredump for docker, do (to modify system coredump location to /tmp.): 
+
+`echo '/tmp/core.%t.%e.%p' | sudo tee /proc/sys/kernel/core_pattern`
+
 # Upgrade the system and install go
 sudo apt update
 sudo apt upgrade -y
