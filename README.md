@@ -17,3 +17,7 @@ alias python='/usr/bin/python3'
 source ~/.bashrc
 
 Note: This is not for docker env. 
+
+## Clean docker
+
+Prune db and all instances: `sudo docker system prune`
